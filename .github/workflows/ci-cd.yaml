@@ -28,21 +28,4 @@ jobs:
       run: |
         docker push your-dockerhub-username/your-app-name:latest
 
-    # Add deployment steps here if applicable
-  ```
-
-#### 4. **Commit the Workflow File**
-- Commit the `.github/workflows/ci-cd.yml` file and push it to your GitHub repository.
-
-#### 5. **Test the Workflow**
-- Once the workflow file is in your main branch, any push to the branch will trigger the workflow.
-- You can monitor the workflow run in the 'Actions' tab of your GitHub repository.
-
-#### 6. **Configure Secrets for Docker Hub (if applicable)**
-- If your workflow includes pushing to Docker Hub, you'll need to set up secrets in your GitHub repository for your Docker Hub username and access token.
-- Go to the 'Settings' tab of your GitHub repository, then to 'Secrets', and add your Docker Hub credentials as secrets.
-
-### Next Steps
-After setting up your CI/CD pipeline, every push to your repository will trigger the build and (optionally) deployment process. This automates the integration and delivery of your updates, streamlining your development workflow.
-
-If you need help with specific steps in this process or with setting up deployment to AWS, feel free to ask!
+  
